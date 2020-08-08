@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">My Kitchen Survey Form</h1>
+        <p id=description>Thank you for taking the time to help us to improve our service!
+        </p>
+    </header>
+    < id="survey">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required
+            oninvalid="this.setCustomValidity('Let us send you a reward by email')"
+            oninput="this.setCustomValidity('')" />
+        <label for="party" id="number-label">How many in your party?</label>
+        <input type=" number" name="party" id="party" placeholder="Number of people" min="0" max="20" required>
+        <label for="date" id="date-label">Date</label>
+        <input type="date" name="date" id="date" required />
+        <div class="order">
+            <p>What did you order?</p>
+            <select id="dropdown" required>
+                <option disabled selected value>Select your order items</option>
+                <option value="appetizer">Appetizer only</option>
+                <option value="main">Main only</option>
+                <option value="appetizer_drink">Appetizer & Drink</option>
+                <option value="main_drink">Main & Drink</option>
+                <option value="appetizer_main">Appetizer & Main</option>
+                <option value="appetizer_main_drink">Appetizer & Main & Drink</option>
+            </select>
+        </div>
+        <label for="comments" id="comments-label">comments?</label>
+        <textarea name="comments" id="comments" rows="5" columns="50"></textarea>
+
+        </Form>
+
+        <labe>
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+        </labe>
+        <button type="submit">submit</button>
+</body>
+
+</html>
