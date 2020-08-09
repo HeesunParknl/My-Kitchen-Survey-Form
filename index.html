@@ -14,42 +14,93 @@
         <p id=description>Thank you for taking the time to help us to improve our service!
         </p>
     </header>
-    < id="survey">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name" required />
-        <label for="email" id="email-label">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your Email" required
-            oninvalid="this.setCustomValidity('Let us send you a reward by email')"
-            oninput="this.setCustomValidity('')" />
-        <label for="party" id="number-label">How many in your party?</label>
-        <input type=" number" name="party" id="party" placeholder="Number of people" min="0" max="20" required>
-        <label for="date" id="date-label">Date</label>
-        <input type="date" name="date" id="date" required />
-        <div class="order">
-            <p>What did you order?</p>
-            <select id="dropdown" required>
-                <option disabled selected value>Select your order items</option>
-                <option value="appetizer">Appetizer only</option>
-                <option value="main">Main only</option>
-                <option value="appetizer_drink">Appetizer & Drink</option>
-                <option value="main_drink">Main & Drink</option>
-                <option value="appetizer_main">Appetizer & Main</option>
-                <option value="appetizer_main_drink">Appetizer & Main & Drink</option>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="personal-information" placeholder="Enter your name"
+                required />
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="personal-information" placeholder="Enter your Email"
+                required oninvalid="this.setCustomValidity('Let us send you a reward by email')"
+                oninput="this.setCustomValidity('')" />
+        </div>
+        <div class="form-group">
+            <p>Gender</p>
+            <select id="dropdown" class="personal-information" required>
+                <option disabled selected value>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
             </select>
         </div>
-        <label for="comments" id="comments-label">comments?</label>
-        <textarea name="comments" id="comments" rows="5" columns="50"></textarea>
-
-        </Form>
-
-        <labe>
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-        </labe>
-        <button type="submit">submit</button>
+        <div class="form-group">
+            <label for="party" id="number-label">How many in your party?</label>
+            <input type=" number" name="party" id="party" class="personal-information" placeholder="Number of people"
+                min="0" max="20" required>
+        </div>
+        <div class="form-group">
+            <label for="date" id="date-label">Date</label>
+            <input type="date" name="date" id="date" class="personal-information" required />
+        </div>
+        <div class="form-group">
+            <label for="what-did-you-order" id="order-label">What did you order?<span class="clue">(Check all that
+                    apply)</span></label>
+            <input type="checkbox" name="order" value="appetizer">Appetizer
+            <input type="checkbox" name="order" value="main">Main
+            <input type="checkbox" name="order" value="dessert">Dessert
+            <input type="checkbox" name="order" value="drink">Drink
+        </div>
+        <div class="form-group">
+            <label for="quality-of-food" id="quality-label">Quality of food:</label>
+            <input type="radio" name="quality" value="exellent">Excellent
+            <input type="radio" name="quality" value="good">Good
+            <input type="radio" name="quality" value="fair">Fair
+            <input type="radio" name="quality" value="poor">poor
+        </div>
+        <div class="form-group">
+            <label for="portion-size" id="portion-label">Portion size:</label>
+            <input type="radio" name="portion" value="exellent">Excellent
+            <input type="radio" name="portion" value="good">Good
+            <input type="radio" name="portion" value="fair">Fair
+            <input type="radio" name="portion" value="poor">poor
+        </div>
+        <div class="form-group">
+            <label for="service" id="service-label">Service:</label>
+            <input type="radio" name="service" value="exellent">Excellent
+            <input type="radio" name="service" value="good">Good
+            <input type="radio" name="service" value="fair">Fair
+            <input type="radio" name="service" value="poor">poor
+        </div>
+        <div class="form-group">
+            <label for="cleanliness" id="cleanliness-label">Cleanliness:</label>
+            <input type="radio" name="cleanliness" value="exellent">Excellent
+            <input type="radio" name="cleanliness" value="good">Good
+            <input type="radio" name="cleanliness" value="fair">Fair
+            <input type="radio" name="cleanliness" value="poor">poor
+        </div>
+        <div class="form-group">
+            <label for="ovarall-value" id="overall-label">Overall Valye:</label>
+            <input type="radio" name="overall" value="exellent">Excellent
+            <input type="radio" name="overall" value="good">Good
+            <input type="radio" name="overall" value="fair">Fair
+            <input type="radio" name="overall" value="poor">poor
+        </div>
+        <div class="form-group">
+            <label for="recommend" id="recommend-label">Would you recommend our restaurant to a friend?</label>
+            <input type="radio" name="recommend" value="definitely">Definitely
+            <input type="radio" name="recommend" value="maybe">Maybe
+            <input type="radio" name="recommend" value="not-sure">Not sure
+        </div>
+        <div class="form-group">
+            <label for="comments" id="comments-label">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" rows="5" columns="100">
+        </textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">submit</button>
+        </div>
+    </form>
 </body>
 
 </html>

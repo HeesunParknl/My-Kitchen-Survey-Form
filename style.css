@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+header {
+    padding: 20px;
+    background-color: ;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(33, 33, 33);
+}
+
+form {
+    width: 70%;
+    height: auto;
+    margin: 12px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+div {
+    padding: 35px 0 0 12%;
+    line-height: 2;
+}
+
+label {
+    display: flex;
+}
+
+.personal-information {
+    width: 84%;
+}
+
+.clue {
+    font-size: smaller;
+    padding: 0 4px;
+}
+
+button {
+    margin-bottom: 35px;
+}
