@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>surveyform</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,14 +37,14 @@
         </div>
         <div class="form-group">
             <label for="party" id="number-label">How many in your party?</label>
-            <input type=" number" name="party" id="party" class="personal-information" placeholder="Number of people"
+            <input type="number" name="party" id="party" class="personal-information" placeholder="Number of people"
                 min="0" max="20" required>
         </div>
         <div class="form-group">
             <label for="date" id="date-label">Date</label>
             <input type="date" name="date" id="date" class="personal-information" required />
         </div>
-        <div class="form-group">
+        <div class="form-group-eval">
             <label for="what-did-you-order" id="order-label">What did you order?<span class="clue">(Check all that
                     apply)</span></label>
             <input type="checkbox" name="order" value="appetizer">Appetizer
@@ -51,53 +52,53 @@
             <input type="checkbox" name="order" value="dessert">Dessert
             <input type="checkbox" name="order" value="drink">Drink
         </div>
-        <div class="form-group">
-            <label for="quality-of-food" id="quality-label">Quality of food:</label>
+        <div class="form-group-eval">
+            <label for="quality-of-food" id="quality-label">Quality of food</label>
             <input type="radio" name="quality" value="exellent">Excellent
             <input type="radio" name="quality" value="good">Good
             <input type="radio" name="quality" value="fair">Fair
             <input type="radio" name="quality" value="poor">poor
         </div>
-        <div class="form-group">
-            <label for="portion-size" id="portion-label">Portion size:</label>
+        <div class="form-group-eval">
+            <label for="portion-size" id="portion-label">Portion size</label>
             <input type="radio" name="portion" value="exellent">Excellent
             <input type="radio" name="portion" value="good">Good
             <input type="radio" name="portion" value="fair">Fair
             <input type="radio" name="portion" value="poor">poor
         </div>
-        <div class="form-group">
-            <label for="service" id="service-label">Service:</label>
+        <div class="form-group-eval">
+            <label for="service" id="service-label">Service</label>
             <input type="radio" name="service" value="exellent">Excellent
             <input type="radio" name="service" value="good">Good
             <input type="radio" name="service" value="fair">Fair
             <input type="radio" name="service" value="poor">poor
         </div>
-        <div class="form-group">
-            <label for="cleanliness" id="cleanliness-label">Cleanliness:</label>
+        <div class="form-group-eval">
+            <label for="cleanliness" id="cleanliness-label">Cleanliness</label>
             <input type="radio" name="cleanliness" value="exellent">Excellent
             <input type="radio" name="cleanliness" value="good">Good
             <input type="radio" name="cleanliness" value="fair">Fair
             <input type="radio" name="cleanliness" value="poor">poor
         </div>
-        <div class="form-group">
-            <label for="ovarall-value" id="overall-label">Overall Valye:</label>
+        <div class="form-group-eval">
+            <label for="ovarall-value" id="overall-label">Overall Value</label>
             <input type="radio" name="overall" value="exellent">Excellent
             <input type="radio" name="overall" value="good">Good
             <input type="radio" name="overall" value="fair">Fair
             <input type="radio" name="overall" value="poor">poor
         </div>
-        <div class="form-group">
+        <div class="form-group-eval">
             <label for="recommend" id="recommend-label">Would you recommend our restaurant to a friend?</label>
             <input type="radio" name="recommend" value="definitely">Definitely
             <input type="radio" name="recommend" value="maybe">Maybe
             <input type="radio" name="recommend" value="not-sure">Not sure
         </div>
-        <div class="form-group">
+        <div class="form-group-eval">
             <label for="comments" id="comments-label">Any comments or suggestions?</label>
             <textarea name="comments" id="comments" rows="5" columns="100">
         </textarea>
         </div>
-        <div class="form-group">
+        <div class="form-group-eval">
             <button type="submit">submit</button>
         </div>
     </form>
